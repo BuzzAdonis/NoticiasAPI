@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoticiasAPI", "NoticiasAPI\NoticiasAPI.csproj", "{53B22A03-F4A3-4D96-9645-742C069EFBB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoticiasAPI", "NoticiasAPI\NoticiasAPI.csproj", "{53B22A03-F4A3-4D96-9645-742C069EFBB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24ACBA40-31E7-4AF1-A8FA-FFBF62E04028}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
