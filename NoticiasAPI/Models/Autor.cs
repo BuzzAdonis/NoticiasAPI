@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +16,10 @@ namespace NoticiasAPI.Models
         public string Apellido { get; set; }
         public DateTime FechaDeCreacion { get; set; }
         public DateTime FechaDeEdicion { get; set; }
-    }
+      public class Mapeo {
+        public Mapeo(EntityTypeBuilder<Autor> mepeoNoticia)
+        {
+            mepeoNoticia.HasKey(x => x.AutorID);
+        }
+    } }
 }
