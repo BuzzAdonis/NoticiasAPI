@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NoticiasAPI
 {
-    class NoticiasDBContext: DbContext
+  public  class NoticiasDBContext: DbContext
     {
         public NoticiasDBContext(DbContextOptions opsiones) : base(opsiones)
         {

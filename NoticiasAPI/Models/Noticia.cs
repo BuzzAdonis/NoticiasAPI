@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace NoticiasAPI.Models
 {
-    class Noticia
+   public class Noticia
     {
         public int NoticiaID { get; set; }
         public string Titulo { get; set; }
@@ -25,7 +25,7 @@ namespace NoticiasAPI.Models
                 mepeoNoticia.HasKey(x => x.NoticiaID);
                mepeoNoticia.Property(x => x.Titulo).HasColumnName("Titulo");
                 mepeoNoticia.ToTable("Noticia");
-                mepeoNoticia.HasOne(x =>x.Autor);
+                mepeoNoticia.HasOne(x => x.Autor);
             }
         }
     }
